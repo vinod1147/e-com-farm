@@ -6,7 +6,7 @@ const Contact = () => {
             <div className='flex flex-col justify-center items-center'>
                 <div className="">
                     <h2 className='text-center text-3xl font-bold leading-tight'>Lets talk about everything!</h2>
-                    <img className='pt-4 h-40 mx-auto py-2' src="/logo.png" alt="Company Logo" />
+                    <img className='pt-4 h-40 mx-auto py-2' src="/logo.jpg" alt="Company Logo" />
                     <p className='text-center text-xl lg:text-2xl font-medium leading-tight'>Feel free to ask us anything!</p>
                     <p className='py-4 px-4 text-md lg:text-md leading-tight text-center'>If you have any questions regarding your order, feel free to send email, call or Whatsapp us on our support number</p>
                     <div className='flex justify-between'>

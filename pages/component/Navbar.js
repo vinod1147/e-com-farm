@@ -2,7 +2,6 @@ import React from 'react';
 import { Fragment } from 'react'
 import Link from 'next/link'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -21,8 +20,9 @@ const Navbar = () => {
                         </div>
                         <nav className="ml-7 flex flex-wrap items-center text-base justify-center">
                             <a className="mr-5 hover:text-red-600 font-bold text-lg font-sans cursor-pointer">Home</a>
-                            <a className="mr-5 hover:text-red-600 font-bold text-lg font-sans cursor-pointer">About</a>
-                            <a className="mr-5 hover:text-red-600 font-bold text-lg font-sans cursor-pointer">Contact</a>
+                            <Link href={'/about'}><a className="mr-5 hover:text-red-600 font-bold text-lg font-sans cursor-pointer">About</a></Link>
+                            <Link href={'/contact'}><a className="mr-5 hover:text-red-600 font-bold text-lg font-sans cursor-pointer">Contact</a></Link>
+                            <Link href={'/shop'}><a className="mr-5 hover:text-red-600 font-bold text-lg font-sans cursor-pointer">Shop</a></Link>
                             {/* THIS IS CODE FOR THE DROPDOWN MENU */}
                             <a className="mr-5 font-bold text-lg font-sans cursor-pointer">
                                 <Menu as="div" className="relative inline-block text-left">
